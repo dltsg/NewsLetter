@@ -4,11 +4,12 @@ This repository contains HTML email newsletter templates for Proteus, a platform
 
 ## Contents
 
-- `EmailNewsletter_Edition_1.html`: The first edition of the Proteus newsletter featuring an introduction to the platform and its key features.
-- `assets/`: Directory containing images and SVG files used in the newsletters.
-  - `banner1.png`: Main banner image for the newsletter.
-  - `Underline.svg`: SVG file for the stylized underline effect.
-  - `val1.png` - `val5.png`: Feature images used in the newsletter.
+- `edition-1/`: Directory containing the first edition of the newsletter and its assets
+  - `EmailNewsletter_Edition_1.html`: The first edition of the Proteus newsletter featuring an introduction to the platform and its key features.
+  - `assets/`: Directory containing images and SVG files used in the newsletter.
+    - `banner1.png`: Main banner image for the newsletter.
+    - `Underline.svg`: SVG file for the stylized underline effect.
+    - `val1.png` - `val5.png`: Feature images used in the newsletter.
 
 ## Features
 

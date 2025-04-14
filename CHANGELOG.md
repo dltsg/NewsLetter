@@ -2,6 +2,13 @@
 
 All notable changes to the Proteus Newsletter templates will be documented in this file.
 
+## [1.0.1] - 2025-04-14
+
+### Changed
+- Reorganized folder structure: moved newsletter and assets to edition-1 directory
+- Updated index.html to reflect new folder structure
+- Updated documentation to reflect new organization
+
 ## [1.0.0] - 2025-04-13
 
 ### Added
