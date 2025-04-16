@@ -7,7 +7,6 @@
   <title>Proteus Newsletter</title>
   <!-- <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet"> -->
   <style>
-    /* Base styles */
     body {
       margin: 0;
       padding: 0;
@@ -16,19 +15,15 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
-
-    /* Reset styles for email clients */
     table {
       border-spacing: 0;
       border-collapse: collapse;
       mso-table-lspace: 0pt;
       mso-table-rspace: 0pt;
     }
-
     td {
       padding: 0;
     }
-
     img {
       border: 0;
       height: auto;
@@ -38,230 +33,49 @@
       -ms-interpolation-mode: bicubic;
       display: block;
     }
-
-    /* Variables (fallback colors included) */
-    :root {
-      --bg-primary: #FFFFFF;
-      --bg-secondary: #FAFAFA;
-      --bg-brand-primary: #EFFEF1;
-      --bg-brand-dark: #03300E;
-      --bg-brand-tertiary: #8FF5A2;
-      --text-primary: #181D27;
-      --text-secondary: #414651;
-      --text-brand-primary: #03300E;
-      --text-white: #FFFFFF;
-      --text-brand-on-accent: #DBFDE1;
-    }
-
-    /* Container */
     .container {
       width: 600px;
       margin: 0 auto;
       background-color: #FAFAFA;
     }
-
-    /* Typography */
-    .text-center {
-      text-align: center;
-    }
-
-    .title-large {
-      font-size: 24px;
-      font-weight: 600;
-      line-height: 30px;
-      color: #FFFFFF;
-    }
-
-    .title-medium {
-      font-size: 24px;
-      font-weight: 600;
-      line-height: 32px;
-      color: #03300E;
-    }
-
-    .subtitle {
-      font-size: 12px;
-      font-weight: 600;
-      line-height: 18px;
-      color: #181D27;
-    }
-
-    .body-text {
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 18px;
-      color: #181D27;
-    }
-
-    .small-text {
-      font-size: 10px;
-      font-weight: 400;
-      line-height: 14px;
-      letter-spacing: 0.1px;
-      color: #414651;
-    }
-
-    .footer-text {
-      font-size: 10px;
-      font-weight: 400;
-      line-height: 14px;
-      letter-spacing: 0.1px;
-      color: #DBFDE1;
-    }
-
-    /* Links */
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    a.underline {
-      text-decoration: underline;
-    }
-
-    /* Sections */
     .header {
       background-color: #FFFFFF;
       padding: 12px 10px;
     }
-
     .banner {
       background-color: #03300E;
       position: relative;
       height: 281px;
       overflow: hidden;
     }
-
     .banner-image {
       position: relative;
       left: -30px;
-      /* Adjust this value to position the image correctly */
       top: -30px;
-      /* Adjust this value to position the image correctly */
       max-width: none;
     }
-
-    .banner-overlay {
-      background: radial-gradient(ellipse 92.27% 92.27% at 50.00% 7.73%, rgba(1, 9, 12, 0) 0%, #010D0E 100%);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-    }
-
-    .banner-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 80%;
-      text-align: center;
-      z-index: 2;
-    }
-
     .intro {
       background-color: #FFFFFF;
       padding: 32px;
     }
-
-    .features {
-      background-color: #EFFEF1;
-      padding: 32px;
-    }
-
-    .feature-box {
-      margin-bottom: 32px;
-      height: 150px;
-    }
-
-    .feature-image {
-      width: 50%;
-      height: 150px;
-      border-radius: 4px;
-      border: 1px solid #8FF5A2;
-      overflow: hidden;
-    }
-
-    .feature-content {
-      width: 50%;
-      padding: 12px 16px;
-    }
-
     .conclusion {
       background-color: #FFFFFF;
       padding: 32px;
     }
-
     .contact {
       background-color: #EFFEF1;
       padding: 32px;
     }
-
     .footer {
       background-color: #03300E;
       padding: 12px 32px;
     }
-
-    /* Utility */
-    .underline-accent {
-      background-color: #8FF5A2;
-      height: 7px;
-      width: 193px;
-      margin: 15px auto;
+    a {
+      color: inherit;
+      text-decoration: none;
     }
-
-    /* Responsive images */
-    .responsive-img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-    }
-
-    /* Email-specific */
-    @media screen and (max-width: 600px) {
-      .container {
-        width: 100% !important;
-      }
-
-      table[class="container"] {
-        width: 100% !important;
-      }
-
-      .feature-box {
-        height: auto !important;
-      }
-
-      .feature-image,
-      .feature-content {
-        width: 100% !important;
-        display: block !important;
-      }
-
-      .feature-image div {
-        height: auto !important;
-      }
-
-      .feature-image img {
-        max-width: 100% !important;
-        height: auto !important;
-      }
-
-      .banner-image {
-        left: -15px !important;
-      }
-
-      td[class="feature-image"],
-      td[class="feature-content"] {
-        display: block !important;
-        width: 100% !important;
-      }
-
-      table[class="feature-box"] td {
-        display: block !important;
-        width: 100% !important;
-      }
+    a.underline, a[style*="text-decoration: underline"] {
+      text-decoration: underline !important;
     }
   </style>
 </head>
@@ -286,7 +100,7 @@
 
           <!-- Banner -->
           <tr>
-            <td class="banner" style="position: relative; height: 281px; overflow: hidden;">
+            <td class="banner" style="position: relative; height: 320px; overflow: hidden;">
               <!-- Banner Image with Positioning -->
                 <img src="assets/header.png" alt="Banner Image" width="735" height="490"
                   style="position: absolute; left: -65px; top: -20px; max-width: none;" class="banner-image">
@@ -337,15 +151,16 @@
                     At dltledgers, we believe in shaping ecosystems through trust, adaptability, and technology that serves people — not the other way around.
                   
                     <p>
-                      I’d love to hear how this resonates with your team and explore how we can support your digital journey.
+                      I’d love to hear how this resonates with your team and explore how we can further support your digital journey.
                     </p>
                     <p>
                       Warm regards,<br><br>
-                      <strong>Shine Xavier</strong><br>
+                      <span style="font-weight:bold; font-size:inherit; vertical-align:middle;">Shine Xavier</span><a href="https://www.linkedin.com/in/shinexavier/" style="vertical-align:middle; display:inline-block;"><img src="assets/linkedin.png" alt="LinkedIn" width="16" height="16" style="vertical-align:middle; margin-left:4px; display:inline-block; position:relative; top:-2px;"></a><br>
                       Chief Technology Officer<br>
                       <a href="mailto:shinex@dltledgers.com" style="color:#03300E; text-decoration:none;">shinex@dltledgers.com</a><br>
                       <span style="color:#03300E;">You can reach me directly at +91 98469 78460</span><br>
-                      <a href="https://www.linkedin.com/in/shinexavier/" style="color:#03300E; text-decoration:underline;">LinkedIn</a>
+                      
+<span style="vertical-align:middle;">Book a meeting&nbsp;|<a href="https://calendly.com/shinex-dltledgers/30min" style="vertical-align:middle; display:inline-block;"><img src="assets/calendar.png" alt="Book a meeting" width="16" height="16" style="vertical-align:middle; margin-left:4px; display:inline-block; position:relative; top:-2px;"></a></span>
                     </p>
                   
                   </td>
@@ -388,7 +203,7 @@
                   </td>
                   <td width="50%" align="right"
                     style="font-family: 'Archivo', Arial, sans-serif; font-size: 10px; font-weight: 400; line-height: 14px; letter-spacing: 0.10px; color: #DBFDE1;">
-                    <a href="https://dltledgers.com/press-release/proteus-powered-hindalco-digital-manufacturing-platform-wins-this-years-national-manufacturing-leadership-award/" style="color: #DBFDE1; text-decoration: underline;">Proteus - Manufacturing Platform Award</a>
+                    <a href="https://dltledgers.com/press-release/proteus-powered-hindalco-digital-manufacturing-platform-wins-this-years-national-manufacturing-leadership-award/" style="color: #DBFDE1; text-decoration: underline;">Proteus wins digital manufacturing platform award</a>
                   </td>
                 </tr>
               </table>
